@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اختبار الوعي الرقمي</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  text-align: center;
+  padding: 25px;
+  color: #172554;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px #0002;
+}
+button {
+  background: #1769ff;
+  color: white;
+  border: 0;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 17px;
+}
+#result { margin-top: 20px; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>🛡️ اختبار الوعي الرقمي</h2>
+  <p>هل تستطيع اكتشاف روابط التصيّد الإلكتروني؟</p>
+  <p>اضغط على الزر لبدء التجربة.</p>
+  <button onclick="test()">ابدأ الاختبار</button>
+  <div id="result"></div>
+</div>
+<script>
+function test() {
+  document.getElementById("result").innerHTML =
+  "⚠️ تذكّر! قبل إدخال معلوماتك، تحقق من عنوان الموقع.<br>" +
+  "لا تدخل كلمة مرورك في رابط وصلك من مصدر مجهول.<br>" +
+  "هذه تجربة توعوية ولا تجمع أي معلومات شخصية.";
+}
+</script>
+</body>
+</html>
